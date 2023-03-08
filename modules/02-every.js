@@ -27,13 +27,13 @@ export const every = () => {
   
   
   
-<h2 class="subtitle text-primary " >  Every ()</h2>
 
+<h2 class="subtitle text-light" >  Every ()</h2>
 
-<div class="d-flex " style="gap:25px"> 
+<div class="content" > 
 <aside>
 
-<p class="text-instagram mb-1">The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.  </p>
+<p class="text- mb-1">The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.  </p>
 
 <div class="card card-primary p-1" >
 
@@ -50,7 +50,11 @@ console.log(ages.every(checkAge));
 </pre>
 
 </div>
+<div class="card card-success mt-1 p-1">
 
+${ages.every(checkAge)}
+
+</div>
 
 </aside>
 

@@ -10,15 +10,15 @@ export function concat() {
 
   document.querySelector(".container").innerHTML = `
   
-  <h2 class="subtitle text-primary" >  Concat ()</h2>
+  <h2 class="subtitle text-light " >  Concat ()</h2>
 
 
-<div class="d-flex " style="gap:25px"> 
-<aside>
+<div class="content" > 
+<aside >
 
-<p class="text-instagram mb-1">The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array. </p>
+<p class="text-warning mb-1">The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array. </p>
 
-<div class="card card-primary p-1">
+<div class="card card-primary p-1" >
 
 <pre>
 const person = ["First Name", "Last Name"];
@@ -34,6 +34,11 @@ console.log(addressDetail);
 
 </div>
 
+<div class="card card-success mt-1 p-1">
+
+${addressDetail}
+
+</div>
 
 </aside>
 

@@ -3,6 +3,17 @@
 import { concat } from "./modules/01-contact.js";
 import { every } from "./modules/02-every.js";
 import { fill } from "./modules/03-fill.js";
+import { filter } from "./modules/04-filter.js";
+import { find } from "./modules/05-find.js";
+import { findIndex } from "./modules/06-findIndex.js";
+import { forEach } from "./modules/07-forEach.js";
+import { from } from "./modules/08-from.js";
+import { map } from "./modules/09-map.js";
+import { includes } from "./modules/010-includes.js";
+import { indexOf } from "./modules/011-indexOf.js";
+import { isArray } from "./modules/012-isArray.js";
+import { join } from "./modules/013-join.js";
+import { reduce } from "./modules/014-reduce.js";
 
 // DOM Elements
 
@@ -42,9 +53,33 @@ navItems.forEach((navItem) => {
         toggleActive(navItem);
         forEach();
         break;
-      case "every":
+      case "from":
         toggleActive(navItem);
-        every();
+        from();
+        break;
+      case "map":
+        toggleActive(navItem);
+        map();
+        break;
+      case "includes":
+        toggleActive(navItem);
+        includes();
+        break;
+      case "indexOf":
+        toggleActive(navItem);
+        indexOf();
+        break;
+      case "isArray":
+        toggleActive(navItem);
+        isArray();
+        break;
+      case "join":
+        toggleActive(navItem);
+        join();
+        break;
+      case "reduce":
+        toggleActive(navItem);
+        reduce();
         break;
       default:
         break;
