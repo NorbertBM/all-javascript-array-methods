@@ -48,9 +48,10 @@ export const reduce = () => {
   
   <p class="text-warning mb-1">The reduce() method reduces the array to a single value. The reduce() method executes a provided function for each value of the array (from left-to-right). Also, the return value of the function is stored in an accumulator (result/total).</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   const users = [
     { name: "Arabella", age: 20, income: 400 },

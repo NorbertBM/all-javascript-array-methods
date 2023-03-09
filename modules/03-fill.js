@@ -31,9 +31,11 @@ export const fill = () => {
 
 <p class="text-warning mb-1">The fill() method fills the specified elements in an array with a static value.</p>
 
-<div class="card card-primary p-1" >
+<div class="card card-primary p-1" style="position:relative;">
+ <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
 
-<pre>
+<pre id="code">
+
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits);
 

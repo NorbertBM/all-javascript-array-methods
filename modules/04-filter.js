@@ -34,9 +34,10 @@ export const filter = () => {
 
 <p class="text-warning mb-1">The filter() method creates an array filled with all array elements that pass a test (provided as a function).</p>
 
-<div class="card card-primary p-1" >
+<div class="card card-primary p-1" style="position:relative;">
+ <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
 
-<pre>
+<pre id="code">
 
 var ages = [32, 33, 16, 40];
 

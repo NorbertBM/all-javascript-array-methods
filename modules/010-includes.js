@@ -57,9 +57,10 @@ export const includes = () => {
   
   <p class="text-warning mb-1">The includes() method determines whether an array contains a specified element.</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   
   const users = [

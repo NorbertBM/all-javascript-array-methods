@@ -47,9 +47,10 @@ export const from = () => {
   
   <p class="text-warning mb-1">The Array.from() method returns an Array object from any object with a length property or an iterable object.</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   const users = [
     { name: "Arabella", age: 20 },

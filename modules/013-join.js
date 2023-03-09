@@ -30,9 +30,10 @@ export const join = () => {
   
   <p class="text-warning mb-1">The join() method returns the array as a string. The elements will be separated by a specified separator. The default separator is comma (,).</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
 

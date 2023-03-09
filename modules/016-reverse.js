@@ -58,9 +58,10 @@ export const reverse = () => {
   
   <p class="text-warning mb-1">The reverse() method reverses the order of the elements in an array.</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   
   const users = [

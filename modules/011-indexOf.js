@@ -41,9 +41,10 @@ export const indexOf = () => {
   
   <p class="text-warning mb-1">The indexOf() method searches the array for the specified item, and returns its position.</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+ <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+
+<pre id="code">
   
   
   const users = [

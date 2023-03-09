@@ -94,9 +94,10 @@ export const shiftAndUnshift = () => {
     
   <p class="text-warning mb-1"> The shift() method removes the first item of an array. And The return value of the shift method is the removed item.</p>
 
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+ <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+
+<pre id="code">
   
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
   fruits.unshift("Kiwi");

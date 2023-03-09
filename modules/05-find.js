@@ -40,9 +40,10 @@ export const find = () => {
 
 <p class="text-warning mb-1">The find() method returns the value of the first element in an array that pass a test (provided as a function). </p>
 
-<div class="card card-primary p-1" >
+<div class="card card-primary p-1" style="position:relative;">
+ <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
 
-<pre>
+<pre id="code">
 
 const friends = [
   { name: "Arabella", age: 20 },
@@ -50,7 +51,6 @@ const friends = [
   { name: "Laura", age: 16 },
 ];
 
-//todo:   find conditions:
 
 function findMinor(array) {
   return array.age < 18;

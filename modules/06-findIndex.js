@@ -50,9 +50,10 @@ export const findIndex = () => {
   
   <p class="text-warning mb-1">The findIndex() method returns the index of the first element in an array that pass a test (provided as a function).</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   const users = [
     { name: "Arabella", age: 20 },

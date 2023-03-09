@@ -35,9 +35,10 @@ export const every = () => {
 
 <p class="text- mb-1">The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.  </p>
 
-<div class="card card-primary p-1" >
+<div class="card card-primary p-1" style="position:relative;">
+ <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
 
-<pre>
+<pre id="code">
 const ages = [32, 33, 16, 40];
 
 function checkAge(age) {

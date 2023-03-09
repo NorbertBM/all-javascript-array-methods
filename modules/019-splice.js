@@ -68,9 +68,10 @@ export const splice = () => {
     
 
 
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
 

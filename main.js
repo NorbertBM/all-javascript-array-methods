@@ -30,14 +30,17 @@ navItems.forEach((navItem) => {
 
   // Click event listener
   navItem.onclick = () => {
+    getCode();
     switch (navItem.id) {
       case "concat":
         toggleActive(navItem);
         concat();
+
         break;
       case "every":
         toggleActive(navItem);
         every();
+
         break;
       case "fill":
         toggleActive(navItem);
@@ -124,4 +127,24 @@ function toggleActive(el) {
     .querySelectorAll(".nav-item")
     .forEach((navItem) => navItem.classList.remove("active"));
   el.classList.add("active");
+}
+
+let code;
+let clipboardBtn;
+
+const getCode = () => {
+  setTimeout(() => {
+    code = document.getElementById("code").textContent;
+    clipboardBtn = document.querySelector(".btn-clipboard");
+    clipboardBtn.onclick = () => copyToClipboard();
+  }, 300);
+};
+
+function copyToClipboard() {
+  const textArea = document.createElement("textarea");
+  textArea.textContent = code;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  alert("Copied to clipboard ");
 }

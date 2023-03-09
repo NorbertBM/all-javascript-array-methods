@@ -100,9 +100,11 @@ export const pushAndPop = () => {
   <p class="text-warning mb-1"> The push() method adds new items to the end of an array, and returns the new length.</p>
     
   <p class="text-warning mb-1"> The pop() method removes the last element of an array, and returns that element.</p>
-  <div class="card card-primary p-1" >
   
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
   fruits.push("Kiwi");

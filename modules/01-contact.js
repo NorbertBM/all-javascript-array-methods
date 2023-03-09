@@ -18,9 +18,11 @@ export function concat() {
 
 <p class="text-warning mb-1">The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array. </p>
 
-<div class="card card-primary p-1" >
+<div class="card card-primary p-1" style="position:relative;">
+ <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+<pre id="code">
 
-<pre>
 const person = ["First Name", "Last Name"];
 const info = ["Emil", "Age", "Address"];
 const personalInfo = person.concat(info);
@@ -30,6 +32,7 @@ console.log(personalInfo);
 
 const addressDetail = personalInfo.concat("City", "Street");
 console.log(addressDetail);
+
 </pre>
 
 </div>

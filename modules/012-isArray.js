@@ -55,9 +55,10 @@ export const isArray = () => {
   
   <p class="text-warning mb-1">The isArray() method determines whether an object is an array. This function returns true if the object is an array, and false if not.</p>
   
-  <div class="card card-primary p-1" >
-  
-  <pre>
+  <div class="card card-primary p-1" style="position:relative;">
+  <button  class="btn btn-sm btn-primary btn-clipboard" >&#128203</button>
+ 
+ <pre id="code">
   
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
