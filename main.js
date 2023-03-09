@@ -14,6 +14,12 @@ import { indexOf } from "./modules/011-indexOf.js";
 import { isArray } from "./modules/012-isArray.js";
 import { join } from "./modules/013-join.js";
 import { reduce } from "./modules/014-reduce.js";
+import { sort } from "./modules/015-sort.js";
+import { reverse } from "./modules/016-reverse.js";
+import { pushAndPop } from "./modules/017-pushAndPop.js";
+import { shiftAndUnshift } from "./modules/018-shiftAndUnshift.js";
+import { splice } from "./modules/019-splice.js";
+import { some } from "./modules/020-some.js";
 
 // DOM Elements
 
@@ -80,6 +86,30 @@ navItems.forEach((navItem) => {
       case "reduce":
         toggleActive(navItem);
         reduce();
+        break;
+      case "sort":
+        toggleActive(navItem);
+        sort();
+        break;
+      case "reverse":
+        toggleActive(navItem);
+        reverse();
+        break;
+      case "pushAndPop":
+        toggleActive(navItem);
+        pushAndPop();
+        break;
+      case "shiftAndUnshift":
+        toggleActive(navItem);
+        shiftAndUnshift();
+        break;
+      case "splice":
+        toggleActive(navItem);
+        splice();
+        break;
+      case "some":
+        toggleActive(navItem);
+        some();
         break;
       default:
         break;

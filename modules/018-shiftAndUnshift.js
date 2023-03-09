@@ -1,26 +1,24 @@
-// TODO: push()
+// TODO: unshift()
 
-// ! The push() method adds new items to the end of an array, and returns the new length.
+// ! The unshift() method adds new items to the beginning of an array, and returns the new length.
 
-// Note: The new item(s) will be added at the end of the array.
-
-// Note: This method changes the length of the array.
-
-// Tip: To add items at the beginning of an array, use the unshift() method.
+// Tip: To add new items at the end of an array, use the push() method. Witch I covered in my push and pop video!
 
 //* Syntax //
 
-// array.push(item1, item2, ..., itemX)
+// array.unshift(item1, item2, ..., itemX)
 
-export const pushAndPop = () => {
-  console.log("push()");
+export const shiftAndUnshift = () => {
+  console.log("unshift()");
 
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
-  fruits.push("Kiwi");
+  fruits.unshift("Kiwi");
 
   console.log(fruits);
+  //? Note: This method changes the length of an array.
+  console.log(fruits.length);
 
-  const sortFruits = (newItem) => fruits.push(newItem);
+  const sortFruits = (newItem) => fruits.unshift(newItem);
   console.log(sortFruits("Prune"));
   console.log(fruits);
 
@@ -35,7 +33,7 @@ export const pushAndPop = () => {
 
   // todo: create a function witch will add a new user to the existing array of users
   function addNewUser(addNewUser) {
-    users.push(addNewUser);
+    users.unshift(addNewUser);
   }
 
   //todo:  we will a initiate newUser variable with let because the value of the variable will constantly change
@@ -55,61 +53,59 @@ export const pushAndPop = () => {
 
   //   TODO: pop()
 
-  console.log("pop()");
+  console.log("shift()");
 
-  // ! The pop() method removes the last element of an array, and returns that element.
+  // !The shift() method removes the first item of an array. And The return value of the shift method is the removed item.
 
-  //? Note: This method changes the length of an array.
-
-  // Tip: To remove the first element of an array, use the shift() method.
+  // Tip: To remove the last item of an array, use the pop() method. Witch I also covered in my push and pop video!
 
   //* Syntax //
 
-  // array.pop()
+  // array.shift()
 
-  //   todo: lets create a function witch will remove the last user from the users array
-  function removeLastUser() {
-    users.pop();
+  //   todo: lets create a function witch will remove the first user from the users array
+  function removeFirstUser() {
+    users.shift();
   }
-  // * now you need to execute the function in order to remove a user from the users array
+  // * now you need to execute the function in order to remove a user from the start of the users array
 
-  console.log(removeLastUser());
+  console.log(removeFirstUser());
   //? Note: this method will change the original array.
   console.log(users);
   //? Note: This method will also changes the length of the array.
   console.log(users.length);
 
-  //   * each time you will execute the removeLastUser function the last user from the array of users will be removed
-  console.log(removeLastUser());
+  //   * each time you will execute the removeFirstUser function the First user from the array of users will be removed
+  console.log(removeFirstUser());
   console.log(users);
 
-  console.log(removeLastUser());
-  console.log(users);
-
-  users.toString();
+  console.log(removeFirstUser());
   console.log(users);
 
   document.querySelector(".container").innerHTML = `
   
   
-  <h2 class="subtitle text-light" >  Push & Pop ()</h2>
+  <h2 class="subtitle text-light" >  Shift & Unshift ()</h2>
   
   <div class="content" > 
   <aside>
   
-  <p class="text-warning mb-1"> The push() method adds new items to the end of an array, and returns the new length.</p>
+  <p class="text-warning mb-1"> The unshift() method adds new items to the beginning of an array, and returns the new length.</p>
     
-  <p class="text-warning mb-1"> The pop() method removes the last element of an array, and returns that element.</p>
+  <p class="text-warning mb-1"> The shift() method removes the first item of an array. And The return value of the shift method is the removed item.</p>
+
   <div class="card card-primary p-1" >
   
   <pre>
   
   const fruits = ["Banana", "Orange", "Apple", "Mango"];
-  fruits.push("Kiwi");
+  fruits.unshift("Kiwi");
 
   console.log(fruits);
+  //? Note: This method changes the length of an array.
+  console.log(fruits.length);
 
-  const sortFruits = (newItem) => fruits.push(newItem);
+  const sortFruits = (newItem) => fruits.unshift(newItem);
   console.log(sortFruits("Prune"));
   console.log(fruits);
 
@@ -122,12 +118,14 @@ export const pushAndPop = () => {
     { name: "Laura", age: 14, income: 800 },
   ];
 
-
   function addNewUser(addNewUser) {
-    users.push(addNewUser);
+    users.unshift(addNewUser);
   }
 
+
+
   let newUser;
+
 
   newUser = { name: "Tony", age: 40, income: 700 };
   addNewUser(newUser);
@@ -139,40 +137,33 @@ export const pushAndPop = () => {
   console.log(users);
   console.log(users.length);
 
-  //   TODO: pop()
+  //   TODO: shift()
 
-  console.log("pop()");
+  console.log("shift()");
 
-
-
-  //? Note: This method changes the length of an array.
-
-  // Tip: To remove the first element of an array, use the shift() method.
 
   //* Syntax //
 
-  // array.pop()
+  // array.shift()
 
- 
-  function removeLastUser() {
-    users.pop();
+
+  function removeFirstUser() {
+    users.shift();
   }
 
 
-  console.log(removeLastUser());
+  console.log(removeFirstUser());
   //? Note: this method will change the original array.
   console.log(users);
   //? Note: This method will also changes the length of the array.
   console.log(users.length);
 
-
+  console.log(removeFirstUser());
   console.log(users);
 
-  console.log(removeLastUser());
+  console.log(removeFirstUser());
   console.log(users);
-
-  users.toString();
-  console.log(users);
+  
   </pre>
   
   </div>
@@ -188,7 +179,7 @@ export const pushAndPop = () => {
   <iframe
     width="420"
     height="315"
-    src="https://www.youtube.com/embed/1tCJQQbTA6A"
+    src="https://www.youtube.com/embed/L1IHrTLb2vM"
   ></iframe>
   </div>
   
