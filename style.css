@@ -1273,7 +1273,7 @@ iframe {
 .btn-clipboard {
   cursor: pointer;
   position: absolute;
-  top: -28px;
+  top: -31px;
   right: 0;
   border-bottom-left-radius: 0;
 }
